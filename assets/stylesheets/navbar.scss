@@ -1,0 +1,20 @@
+nav {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 100%;
+  background-color: $yellow;
+  .site-name {
+    position: absolute;
+    left: 5vw;
+    top: 10px;
+    a {
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      font-size: 1.4em;
+      font-family: 'Poppins', sans-serif;
+      color: $dark;
+      font-style: normal;
+    }
+  }
+}

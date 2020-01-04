@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <nav>
+    <div class="site-name">
+      <a href="/">artau.dev</a>
+    </div>
+  </nav>
+  <div class="post">
+    <div class="title">
+      <h1>{{ page.title }}</h1>
+      <div class="details">
+        <div class="author">
+          Written by <b>{{ page.author }}</b>
+        </div>
+        <div class="created">
+          Published:
+          <time datetime>{{ page.date | date:"%-d %B %Y"}}</time>
+        </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+  </div>
+</body>
+</html>

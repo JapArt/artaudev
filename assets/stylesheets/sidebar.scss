@@ -1,0 +1,15 @@
+.sidebar {
+  color: white;
+  text-align: center;
+  a {
+    color: $blue
+  }
+  .site-name {
+    display: block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: $yellow;
+    font-size: 2em;
+    text-align: center;
+  }
+}
