@@ -16,7 +16,7 @@ $dark: #292d30;
 }
 
 a {
-  color: $red;
+  color: darken($green, 15%);
   font-weight: 600;
   font-style: italic;
 }

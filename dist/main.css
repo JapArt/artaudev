@@ -8,7 +8,7 @@
   font-weight: 400; }
 
 a {
-  color: #ff6188;
+  color: #83cc39;
   font-weight: 600;
   font-style: italic; }
 
@@ -358,8 +358,30 @@ nav {
     .title .details .created {
       padding: 10px 0px 10px 15px; }
 
-.posts .post h2 {
-  font-size: 2.5em; }
+.posts .post {
+  margin-bottom: 80px; }
+  .posts .post:after {
+    content: ' ';
+    display: block;
+    margin: 20px auto;
+    width: 40vw;
+    height: 1px;
+    border-bottom: 2px solid #ffd866; }
+  .posts .post h2 {
+    margin-bottom: 0px; }
+    .posts .post h2 a {
+      font-size: 1em;
+      color: #292d30;
+      font-style: normal;
+      text-decoration: none; }
+    .posts .post h2:hover a {
+      text-decoration: underline; }
+  .posts .post time {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: gray; }
 
 figure {
   margin: 0 auto;
