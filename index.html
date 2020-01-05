@@ -8,10 +8,10 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <div class="post">
-      <h2><a href="/artaudev/{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="/artaudev{{ post.url }}">{{ post.title }}</a></h2>
       <time datetime>{{ post.date | date:"%-d %B %Y"}}</time>
       {{ post.content | truncate: 350 }}
-      <a href="/artaudev/{{ post.url }}">keep reading</a>
+      <a href="/artaudev{{ post.url }}">keep reading</a>
     </div>
   {% endfor %}
 </div>
