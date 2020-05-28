@@ -5,13 +5,9 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <div class="post">
-      <h2><a href="/artaudev{{ post.url }}">{{ post.title }}</a></h2>
-      <time datetime>{{ post.date | date:"%-d %B %Y"}}</time>
-      {{ post.content | truncate: 350 }}
-      <a href="/artaudev{{ post.url }}">keep reading</a>
-    </div>
-  {% endfor %}
-</div>
+<header class="header header-index">
+  <div class="titles">
+    <h1>Diseño y Programación de Apps en México</h1>
+    <p>Creamos aplicaciones y sistemas para todo tipo de empresas. Ya sea que necesites un sistema corporativo para reportes hasta juegos y redes sociales, nuestro equipo puede ayudarte a hacer esa idea realidad.</p>
+  </div>
+</header>

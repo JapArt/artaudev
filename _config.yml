@@ -35,7 +35,7 @@ permalink: /:title:output_ext
 plugins:
   - jekyll-feed
 
-exclude: ['_site', 'node_modules', 'assets', '.sass-cache', 'Gemfile', 'Gemfile.lock', 'package.json', 'webpack.config.js', 'yarn.lock']
+exclude: ['_site', 'node_modules', 'assets', '.sass-cache', 'Gemfile', 'Gemfile.lock', 'package.json', 'webpack.config.js', 'yarn.lock', 'Procfile']
 
 
 # Exclude from processing.

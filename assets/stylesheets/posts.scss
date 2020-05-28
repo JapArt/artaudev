@@ -12,29 +12,29 @@
     margin: 30px auto;
     max-width: 700px;
   }
-}
-
-
-.title {
-  border-bottom: 1px solid $white;
-  text-align: center;
-  margin-bottom: 60px;
-  h1 {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-  .details {
-    display: flex;
-    justify-content: center;
-    .author {
-      padding: 10px 15px 10px 0;
-      border-right: 1px solid $white;
+  .title {
+    border-bottom: 1px solid $white;
+    text-align: center;
+    margin-bottom: 60px;
+    h1 {
+      margin: 0;
+      margin-bottom: 30px;
     }
-    .created {
-      padding: 10px 0px 10px 15px;
+    .details {
+      display: flex;
+      justify-content: center;
+      .author {
+        padding: 10px 15px 10px 0;
+        border-right: 1px solid $white;
+      }
+      .created {
+        padding: 10px 0px 10px 15px;
+      }
     }
   }
 }
+
+
 
 .posts {
   .post {
@@ -51,7 +51,7 @@
       margin-bottom: 0px;
       a {
         font-size: 1em;
-        color: $dark;
+        color: $text-color;
         font-style: normal;
         text-decoration: none;
       }
@@ -91,7 +91,7 @@ figure {
 
 code.highlighter-rouge {
   background-color: rgb(255, 236, 219);
-  color: $dark;
+  color: $text-color;
   font-style: italic;
   font-weight: 600;
   padding: 2px 8px;

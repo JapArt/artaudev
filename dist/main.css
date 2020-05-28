@@ -8,9 +8,8 @@
   font-weight: 400; }
 
 a {
-  color: #83cc39;
-  font-weight: 600;
-  font-style: italic; }
+  color: #249d76;
+  text-decoration: none; }
 
 b, strong, time {
   font-weight: 700; }
@@ -32,51 +31,52 @@ h2 {
   font-size: 2em;
   line-height: 1.3; }
 
-.body-container {
+.container {
   position: relative;
-  display: flex; }
-  .body-container .sidebar-container {
-    position: relative;
-    width: 30%;
-    max-width: 300px;
-    height: 100vh; }
-    .body-container .sidebar-container .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: gray;
-      width: 30%;
-      max-width: 300px;
-      height: 100vh;
-      background-image: url("/dist/artau.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center; }
-  .body-container .content {
-    display: block;
-    width: 70%;
-    padding: 30px 60px; }
-    @media screen and (min-width: 1275px) {
-      .body-container .content {
-        width: calc(70% + 300px); } }
-
-nav {
-  position: relative;
-  display: block;
-  height: 60px;
   width: 100%;
-  background-color: #ffd866; }
-  nav .site-name {
-    position: absolute;
-    left: 5vw;
-    top: 10px; }
-    nav .site-name a {
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      font-size: 1.4em;
+  padding: 0 5vw; }
+
+header {
+  height: calc(100vh - 80px);
+  padding: 60px 0; }
+  header .title p {
+    font-size: 1.2em; }
+
+nav.navbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0; }
+  nav.navbar .site-name {
+    padding: 23px 25px 0px 0px;
+    letter-spacing: -0.03em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #292d30; }
+  nav.navbar .links {
+    display: flex; }
+    nav.navbar .links a {
+      display: block;
       font-family: 'Poppins', sans-serif;
-      color: #292d30;
-      font-style: normal; }
+      font-weight: 600;
+      padding: 25px 25px 0px;
+      height: 80px;
+      color: gray;
+      font-size: 0.9em; }
+      nav.navbar .links a:nth-child(1):hover {
+        color: #3BD2A2; }
+      nav.navbar .links a:nth-child(2):hover {
+        color: #8268FC; }
+      nav.navbar .links a:nth-child(3):hover {
+        color: #4FD0E3; }
+
+.header-index .titles {
+  max-width: 800px; }
 
 .highlight pre {
   background-color: #292d30; }
@@ -94,7 +94,7 @@ nav {
 
 /* Error */
 .highlight .k {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword */
 .highlight .l {
@@ -138,11 +138,11 @@ nav {
 
 /* Generic.Strong */
 .highlight .kc {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword.Constant */
 .highlight .kd {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword.Declaration */
 .highlight .kn {
@@ -150,19 +150,19 @@ nav {
 
 /* Keyword.Namespace */
 .highlight .kp {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword.Pseudo */
 .highlight .kr {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword.Reserved */
 .highlight .kt {
-  color: #ff6188; }
+  color: #EB3569; }
 
 /* Keyword.Type */
 .highlight .ld {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.Date */
 .highlight .m {
@@ -170,7 +170,7 @@ nav {
 
 /* Literal.Number */
 .highlight .s {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String */
 .highlight .na {
@@ -178,15 +178,15 @@ nav {
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #a9dc76; }
+  color: #3BD2A2; }
 
 /* Name.Builtin */
 .highlight .nc {
-  color: #78dce8; }
+  color: #4FD0E3; }
 
 /* Name.Class */
 .highlight .no {
-  color: #78dce8; }
+  color: #4FD0E3; }
 
 /* Name.Constant */
 .highlight .nd {
@@ -254,19 +254,19 @@ nav {
 
 /* Literal.Number.Oct */
 .highlight .sb {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Backtick */
 .highlight .sc {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Char */
 .highlight .sd {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Doc */
 .highlight .s2 {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Double */
 .highlight .se {
@@ -274,23 +274,23 @@ nav {
 
 /* Literal.String.Escape */
 .highlight .sh {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Heredoc */
 .highlight .si {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Interpol */
 .highlight .sx {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Other */
 .highlight .sr {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Regex */
 .highlight .s1 {
-  color: #ffd866; }
+  color: #FFC53A; }
 
 /* Literal.String.Single */
 .highlight .ss {
@@ -341,22 +341,21 @@ nav {
   .post p {
     margin: 30px auto;
     max-width: 700px; }
-
-.title {
-  border-bottom: 1px solid #e2e2e7;
-  text-align: center;
-  margin-bottom: 60px; }
-  .title h1 {
-    margin: 0;
-    margin-bottom: 30px; }
-  .title .details {
-    display: flex;
-    justify-content: center; }
-    .title .details .author {
-      padding: 10px 15px 10px 0;
-      border-right: 1px solid #e2e2e7; }
-    .title .details .created {
-      padding: 10px 0px 10px 15px; }
+  .post .title {
+    border-bottom: 1px solid #e2e2e7;
+    text-align: center;
+    margin-bottom: 60px; }
+    .post .title h1 {
+      margin: 0;
+      margin-bottom: 30px; }
+    .post .title .details {
+      display: flex;
+      justify-content: center; }
+      .post .title .details .author {
+        padding: 10px 15px 10px 0;
+        border-right: 1px solid #e2e2e7; }
+      .post .title .details .created {
+        padding: 10px 0px 10px 15px; }
 
 .posts .post {
   margin-bottom: 80px; }
@@ -366,7 +365,7 @@ nav {
     margin: 20px auto;
     width: 40vw;
     height: 1px;
-    border-bottom: 2px solid #ffd866; }
+    border-bottom: 2px solid #FFC53A; }
   .posts .post h2 {
     margin-bottom: 0px; }
     .posts .post h2 a {
@@ -404,17 +403,4 @@ code.highlighter-rouge {
   padding: 2px 8px;
   border-radius: 3px;
   font-size: 0.85em; }
-
-.sidebar {
-  color: white;
-  text-align: center; }
-  .sidebar a {
-    color: #78dce8; }
-  .sidebar .site-name {
-    display: block;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    color: #ffd866;
-    font-size: 2em;
-    text-align: center; }
 
